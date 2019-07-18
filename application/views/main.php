@@ -113,8 +113,25 @@ $amaterno=$row->amaterno;
         </div>
         <label class="col-sm-2 col-form-label">Desea alguna capacitacion, en el area por parte de la carrera?</label>
         <div class="col-sm-2">
-            <input type="radio" name="c3" id="si" value="SI"> SI
-            <input type="radio" name="c3" id="no" value="NO"> NO
+            <input type="radio" name="c3" id="si3" value="SI"> SI
+            <input type="radio" name="c3" id="no3" value="NO"> NO
+        </div>
+        <label class="col-sm-2 col-form-label" id="tituloc4">En que area?</label>
+        <div class="col-sm-2" id="textoc4">
+            <select class="form-control" name="c4" >
+                <option value="">Seleccionar</option>
+                <option value="Ciencias de la Computación">Ciencias de la Computación</option>
+                <option value="Sistemas de Información">Sistemas de Información</option>
+                <option value="Ingeniería de Software">Ingeniería de Software</option>
+                <option value="Tecnologías de Información">Tecnologías de Información</option>
+                <option value="Bases de datos">Bases de datos</option>
+                <option value="Gerencia empresarial">Gerencia empresarial</option>
+                <option value="Desarrollo de software">Desarrollo de software</option>
+                <option value="Producción de videojuegos">Producción de videojuegos</option>
+                <option value="Producción de videojuegos">Producción de videojuegos</option>
+                <option value="Tecnologías de Comunicacion">Tecnologías de Comunicacion</option>
+                <option value="Modelacion Matematica">Modelacion Matematica</option>
+            </select>
         </div>
     </div>
     <div class="form-group row">
@@ -128,9 +145,10 @@ $amaterno=$row->amaterno;
         $('#textoo2').hide();
         $('#tituloo3').hide();
         $('#textoo3').hide();
-        
         $('#tituloc2').hide();
         $('#textoc2').hide();
+        $('#tituloc4').hide();
+        $('#textoc4').hide();
         
         $('#si').change(function (e) {
             $('#tituloo2').show();
@@ -156,5 +174,16 @@ $amaterno=$row->amaterno;
             $('#textoc2').hide();
             e.preventDefault();
         });
+        $('#si3').change(function (e) {
+            $('#tituloc4').show();
+            $('#textoc4').show();
+            e.preventDefault();
+        });
+        $('#no3').change(function (e) {
+            $('#tituloc4').hide();
+            $('#textoc4').hide();
+            e.preventDefault();
+        });
+
     }
 </script>
