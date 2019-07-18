@@ -3,7 +3,7 @@
 <div class="row d-flex justify-content-center">
     <div class="col-1"></div>
     <div class="col-5"><input placeholder="INGRESAR CI" id="ci"  class="form-control" type="text"></div>
-    <div class="col-5"><button class="btn btn-success" id="botton"><i class="fas fa-check"></i>VERIFICAR</button></div>
+    <div class="col-5"><button class="btn btn-success" style="background: #0d47a1" id="botton"><i class="fas fa-check"></i>VERIFICAR</button></div>
     <div class="col-1"></div>
 </div>
 <div class="divider-custom divider-light">
