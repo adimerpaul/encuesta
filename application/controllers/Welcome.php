@@ -26,11 +26,16 @@ class Welcome extends CI_Controller {
 	}
 	function verificar(){
 	    $ci=$_POST['ci'];
-	    $query=$this->db->query("SELECT * FROM profesional WHERE  ci='$ci'");
+	    $query=$this->db->query("SELECT * FROM registro WHERE ci='$ci'");
 	    if ($query->num_rows()==1){
+            $query=$this->db->query("SELECT * FROM profesional WHERE ci='$ci'");
+            if ($query->num_rows()==1){
+                echo "Ya se realizo la actualizacion!!!";
+            }else{
 
+            }
         }else{
-	        echo "Carnet de identidad no exitente";
+            echo "Carnet de identidad no exitente";
         }
     }
 }
