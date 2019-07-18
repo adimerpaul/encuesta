@@ -30,7 +30,7 @@ class Welcome extends CI_Controller {
 	    if ($query->num_rows()==1){
             $query=$this->db->query("SELECT * FROM profesional WHERE ci='$ci'");
             if ($query->num_rows()==1){
-                echo "Ya se realizo la actualizacion!!!";
+                echo "actualizado";
             }else{
 
             }

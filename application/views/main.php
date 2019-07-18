@@ -59,15 +59,8 @@ $amaterno=$row->amaterno;
         <div class="col-sm-2">
             <select class="form-control" name="profesion" required>
                 <option value="">Seleccionar</option>
-                <option value="MINAS">MINAS</option>
-                <option value="CIVIL">CIVIL</option>
-                <option value="METALURGIA">METALURGIA</option>
-                <option value="MECANICA">MECANICA</option>
-                <option value="ELECTRICA">ELECTRICA</option>
-                <option value="QUIMICA">QUIMICA</option>
-                <option value="GEOLOGIA">GEOLOGIA</option>
-                <option value="SISTEMAS">SISTEMAS</option>
-                <option value="INDUSTRIAL">INDUSTRIAL</option>
+                <option value="INGENIERIA DE SISTEMAS">INGENIERIA DE SISTEMAS</option>
+                <option value="INGENIERIA INFORMATICA">INGENIERIA INFORMATICA</option>
             </select>
         </div>
         <label class="col-sm-1 col-form-label">Año de titulacion</label>
@@ -87,8 +80,8 @@ $amaterno=$row->amaterno;
         <div class="col-sm-2" id="textoo2" >
             <input type="text" name="o2" class="form-control" >
         </div>
-        <label class="col-sm-3 col-form-label">Cargo actual que desempeña</label>
-        <div class="col-sm-2">
+        <label class="col-sm-3 col-form-label" id="tituloo3">Cargo actual que desempeña</label>
+        <div class="col-sm-2" id="textoo3">
             <input type="text" name="o3" class="form-control" >
         </div>
     </div>
@@ -130,18 +123,27 @@ $amaterno=$row->amaterno;
 </form>
 <script !src="">
     window.onload=function (e) {
-        $('#tituloc2').hide();
+        
         $('#tituloo2').hide();
-        $('#textoc2').hide();
         $('#textoo2').hide();
+        $('#tituloo3').hide();
+        $('#textoo3').hide();
+        
+        $('#tituloc2').hide();
+        $('#textoc2').hide();
+        
         $('#si').change(function (e) {
             $('#tituloo2').show();
             $('#textoo2').show();
+            $('#tituloo3').show();
+            $('#textoo3').show();
             e.preventDefault();
         });
         $('#no').change(function (e) {
             $('#tituloo2').hide();
             $('#textoo2').hide();
+            $('#tituloo3').hide();
+            $('#textoo3').hide();
             e.preventDefault();
         });
         $('#si2').change(function (e) {

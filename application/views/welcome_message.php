@@ -1,4 +1,4 @@
-<img class="masthead-avatar mb-4" src="img/avataaars.svg" alt="">
+<img class="masthead-avatar mb-4" src="img/pp.jpg" alt="">
 <h6>INGENIERÍA DE SISTEMAS E INGENIERÍA INFORMÁTICA</h6>
 <div class="row d-flex justify-content-center">
     <div class="col-1"></div>
@@ -13,7 +13,7 @@
     </div>
     <div class="divider-custom-line"></div>
 </div>
-<p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+<p class="masthead-subheading font-weight-light mb-0">Encuesta - Estado - Profesional</p>
 <script !src="">
     window.onload=function (e) {
         $('#botton').click(function (e) {
@@ -24,6 +24,8 @@
                 success:function (e) {
                     if (e==''){
                         window.location="<?=base_url()?>Main/index/"+$('#ci').val();
+                    }else if(e=='actualizado') {
+                        window.location="<?=base_url()?>Main/actualizado";
                     }else{
                         toastr.warning(e);
                     }

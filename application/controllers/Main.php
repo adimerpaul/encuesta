@@ -66,4 +66,9 @@ function terminado(){
     $this->load->view('terminado');
     $this->load->view('templates/footer');
 }
+function actualizado(){
+ $this->load->view('templates/header');
+    $this->load->view('terminado');
+    $this->load->view('templates/footer');   
+}
 }
